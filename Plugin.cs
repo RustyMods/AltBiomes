@@ -1,6 +1,7 @@
 ﻿using System.Reflection;
 using BepInEx;
 using HarmonyLib;
+using MonsterDB;
 
 namespace AltBiomes;
 #nullable disable
@@ -10,7 +11,7 @@ public class AltBiomesPlugin : BaseUnityPlugin
 {
     internal const string ModName = "AltBiomes";
     internal const string ModVersion = "1.0.0";
-    internal const string Author = "{RustyMods}";
+    internal const string Author = "RustyMods";
     public const string ModGUID = Author + "." + ModName;
     private readonly Harmony _harmony = new(ModGUID);
     public static Harmony harmony => instance._harmony;
@@ -20,9 +21,10 @@ public class AltBiomesPlugin : BaseUnityPlugin
     public void Awake()
     {
         instance = this;
-        
-        VersionHandshake.Init();
 
+        Commands.Init();
+        VersionHandshake.Init();
+        
         var assembly = Assembly.GetExecutingAssembly();
         _harmony.PatchAll(assembly);
     }

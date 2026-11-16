@@ -1,6 +1,7 @@
 namespace AltBiomes;
 
-public class ExtendedAltBiom
+public class ExtendedAltBiome : AltBiome
 {
-    
+    public Heightmap.Biome? m_clutterOverride;
 }
+

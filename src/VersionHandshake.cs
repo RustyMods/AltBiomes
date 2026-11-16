@@ -42,7 +42,7 @@ public static class VersionHandshake
         AltBiomesPlugin.LogDebug("Invoking version check");
         ZPackage zpackage = new();
         zpackage.Write(AltBiomesPlugin.ModVersion);
-        zpackage.Write(AltManager.GetRawData());
+        zpackage.Write(AltManager.Serialize());
         peer.m_rpc.Invoke($"{AltBiomesPlugin.ModName}_VersionCheck", zpackage);
     }
 

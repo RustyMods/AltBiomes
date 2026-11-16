@@ -1,12 +1,16 @@
 using System.Collections.Generic;
 using System.Linq;
+using YamlDotNet.Serialization;
 
 namespace AltBiomes;
 
+[YamlSerializable]
 public class AltBiomeRef
 {
+    [YamlMember(Description = "Unique Identifier")]
     public string? m_name;
     public bool? m_enabled;
+    [YamlMember(Description = "Allowed biomes, multiple separated by comma")]
     public Heightmap.Biome? m_biome;
     public string? m_namePrefix;
     public string? m_nameSuffix;
@@ -18,10 +22,16 @@ public class AltBiomeRef
     public List<string>? m_blockEnvironments;
     public List<SpawnDataRef>? m_spawn;
     public List<string>? m_blockSpawnNames;
+    [YamlMember(Description = "If empty, will use default Biome vegetation, else will override")]
     public List<ZoneVegetationRef>? m_addVegetation;
+    [YamlMember(Description = "If empty, will use default biome locations, else will override")]
     public List<ZoneLocationRef>? m_addLocations;
+    [YamlMember(Description = "List of locations blocked from spawning in Alt Biome")]
     public List<string>? m_blockLocationNames;
+    [YamlMember(Description = "Override terrain color")]
     public Heightmap.Biome? m_terrainTextureOverride;
+    [YamlMember(Description = "Override clutter grass")]
+    public Heightmap.Biome? m_clutterOverride;
     public float? m_baseHeightMultiplier;
     public float? m_baseHeightOffset;
     public float? m_heightMapMultiplier;
@@ -45,9 +55,16 @@ public class AltBiomeRef
     public float? m_aboveWorldY;
     // public List<BiomeSector>? Sectors; // this gets added in alt biome generator when valid 
 
+    [YamlIgnore] private AltBiome? AltBiome;
+
     public static implicit operator AltBiome(AltBiomeRef data)
     {
-        var result = new AltBiome
+        if (data.AltBiome != null)
+        {
+            return data.AltBiome;
+        }
+        
+        var result = new ExtendedAltBiome
         {
             m_name = data.m_name ?? "",
             m_enabled = data.m_enabled ?? true,
@@ -66,6 +83,7 @@ public class AltBiomeRef
             m_addLocations = [],
             m_blockLocationNames =  data.m_blockLocationNames ?? [],
             m_terrainTextureOverride = data.m_terrainTextureOverride ?? Heightmap.Biome.None,
+            m_clutterOverride = data.m_clutterOverride ?? Heightmap.Biome.None,
             m_baseHeightMultiplier = data.m_baseHeightMultiplier ?? 0f,
             m_baseHeightOffset = data.m_baseHeightOffset ?? 0f,
             m_heightMapMultiplier = data.m_heightMapMultiplier ?? 0f,
@@ -115,7 +133,8 @@ public class AltBiomeRef
                 .Select(l => (ZoneSystem.ZoneLocation)l)
                 .ToList();
         }
-        
+
+        data.AltBiome = result;
         
         return result;
     }
@@ -141,6 +160,7 @@ public class AltBiomeRef
             m_addLocations = data.m_addLocations.Select(l => (ZoneLocationRef)l).ToList(),
             m_blockLocationNames = data.m_blockLocationNames,
             m_terrainTextureOverride = data.m_terrainTextureOverride,
+            m_clutterOverride = Heightmap.Biome.None,
             m_baseHeightMultiplier = data.m_baseHeightMultiplier,
             m_baseHeightOffset = data.m_baseHeightOffset,
             m_heightMapMultiplier = data.m_heightMapMultiplier,
