@@ -1,0 +1,196 @@
+name: Death Plains
+enabled: true
+biome: Plains
+namePrefix: ''
+nameSuffix: ''
+nameOverride: ''
+levelUpChanceMultiplier: 2
+forceMusic: ''
+forceEnvironment: ''
+addEnvironments: []
+blockEnvironments: []
+spawn:
+- name: Deathsquito
+  enabled: true
+  devDisabled: false
+  prefab: Deathsquito
+  biome: Plains
+  biomeArea: 7
+  maxSpawned: 5
+  spawnInterval: 500
+  spawnChance: 20
+  spawnDistance: 30
+  spawnRadiusMin: 0
+  spawnRadiusMax: 0
+  requiredGlobalKey: ''
+  requiredEnvironments: []
+  requiredPersistentEvent: ''
+  groupSizeMin: 1
+  groupSizeMax: 3
+  groupRadius: 15
+  spawnAtNight: true
+  spawnAtDay: true
+  minAltitude: 1
+  maxAltitude: 1000
+  minTilt: 0
+  maxTilt: 99
+  inForest: true
+  outsideForest: true
+  inLava: false
+  outsideLava: true
+  canSpawnCloseToPlayer: false
+  insidePlayerBase: false
+  minOceanDepth: 0
+  maxOceanDepth: 0
+  huntPlayer: false
+  groundOffset: 1
+  groundOffsetRandom: 0
+  minDistanceFromCenter: 0
+  maxDistanceFromCenter: 0
+  maxLevel: 1
+  minLevel: 1
+  overrideLevelupChance: -1
+blockSpawnNames:
+- Lox
+- Goblin
+addVegetation: []
+addLocations:
+- name: TarPit1
+  enable: true
+  prefabName: TarPit1_1
+  biome: Plains
+  biomeArea: Median
+  quantity: 50
+  prioritized: false
+  centerFirst: false
+  unique: false
+  group: ''
+  minDistanceFromSimilar: 0
+  groupMax: ''
+  maxDistanceFromSimilar: 0
+  iconAlways: false
+  iconPlaced: false
+  randomRotation: true
+  slopeRotation: false
+  snapToWater: false
+  interiorRadius: 0
+  clearArea: true
+  minTerrainDelta: 0
+  maxTerrainDelta: 1.5
+  minimumVegetation: 0
+  maximumVegetation: 1
+  surroundCheckVegetation: false
+  surroundCheckDistance: 20
+  surroundCheckLayers: 2
+  inForest: false
+  forestThresholdMin: 0
+  forestThresholdMax: 0
+  minDistanceFromCenter: 0
+  maxDistanceFromCenter: 0
+  minDistance: 0
+  maxDistance: 0
+  minAltitude: 3
+  maxAltitude: 1000
+- name: TarPit2
+  enable: true
+  prefabName: TarPit2_1
+  biome: Plains
+  biomeArea: Median
+  quantity: 20
+  prioritized: false
+  centerFirst: false
+  unique: false
+  group: ''
+  minDistanceFromSimilar: 0
+  groupMax: ''
+  maxDistanceFromSimilar: 0
+  iconAlways: false
+  iconPlaced: false
+  randomRotation: true
+  slopeRotation: false
+  snapToWater: false
+  interiorRadius: 0
+  clearArea: true
+  minTerrainDelta: 0
+  maxTerrainDelta: 1.5
+  minimumVegetation: 0
+  maximumVegetation: 1
+  surroundCheckVegetation: false
+  surroundCheckDistance: 20
+  surroundCheckLayers: 2
+  inForest: false
+  forestThresholdMin: 0
+  forestThresholdMax: 0
+  minDistanceFromCenter: 0
+  maxDistanceFromCenter: 0
+  minDistance: 0
+  maxDistance: 0
+  minAltitude: 3
+  maxAltitude: 1000
+- name: TarPit3
+  enable: true
+  prefabName: TarPit3_1
+  biome: Plains
+  biomeArea: Median
+  quantity: 100
+  prioritized: false
+  centerFirst: false
+  unique: false
+  group: ''
+  minDistanceFromSimilar: 0
+  groupMax: ''
+  maxDistanceFromSimilar: 0
+  iconAlways: false
+  iconPlaced: false
+  randomRotation: true
+  slopeRotation: false
+  snapToWater: false
+  interiorRadius: 0
+  clearArea: true
+  minTerrainDelta: 0
+  maxTerrainDelta: 1.5
+  minimumVegetation: 0
+  maximumVegetation: 1
+  surroundCheckVegetation: false
+  surroundCheckDistance: 20
+  surroundCheckLayers: 2
+  inForest: false
+  forestThresholdMin: 0
+  forestThresholdMax: 0
+  minDistanceFromCenter: 0
+  maxDistanceFromCenter: 0
+  minDistance: 0
+  maxDistance: 0
+  minAltitude: 3
+  maxAltitude: 1000
+blockLocationNames:
+- GoblinCamp2
+- StoneTower1
+- StoneTower3
+- StoneHenge1
+- StoneHenge2
+- StoneHenge3
+terrainTextureOverride: None
+baseHeightMultiplier: 1
+baseHeightOffset: 0
+heightMapMultiplier: 1
+heightMapOffset: 0
+heightMapBiomeOverride: None
+customGenerator: None
+minDistanceFromCenter: 1000
+minAmountSpawned: 0
+maxAmountSpawned: 1
+chance: 0.2
+requireNeighbor: None
+notNeighbor: None
+incompatibleAltBiomes:
+- Lox Plains
+- Goblin Plains
+minEdgeSize: 99
+maxEdgeSize: 299
+minAvgHeight: 30
+maxAvgHeight: 10000
+belowWorldX: 0
+aboveWorldX: 0
+belowWorldY: 0
+aboveWorldY: 0

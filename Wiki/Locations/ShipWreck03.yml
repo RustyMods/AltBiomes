@@ -1,0 +1,37 @@
+name: ShipWreck03
+enable: true
+prefabName: ShipWreck03
+prefab: ShipWreck03
+biome: Swamp, BlackForest, Plains, Ocean
+biomeArea: Everything
+quantity: 25
+prioritized: false
+centerFirst: false
+unique: false
+group: Shipwreck
+minDistanceFromSimilar: 1024
+groupMax: ''
+maxDistanceFromSimilar: 0
+iconAlways: false
+iconPlaced: false
+randomRotation: true
+slopeRotation: false
+snapToWater: false
+interiorRadius: 0
+clearArea: true
+minTerrainDelta: 0
+maxTerrainDelta: 10
+minimumVegetation: 0
+maximumVegetation: 1
+surroundCheckVegetation: false
+surroundCheckDistance: 20
+surroundCheckLayers: 2
+inForest: false
+forestTresholdMin: 0
+forestTresholdMax: 1
+minDistanceFromCenter: 0
+maxDistanceFromCenter: 0
+minDistance: 0
+maxDistance: 0
+minAltitude: 
+maxAltitude: 

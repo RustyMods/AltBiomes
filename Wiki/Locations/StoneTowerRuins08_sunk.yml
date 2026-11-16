@@ -1,0 +1,37 @@
+name: StoneTowerRuins08_sunk
+enable: true
+prefabName: StoneTowerRuins08_sunk
+prefab: StoneTowerRuins08_sunk
+biome: BlackForest
+biomeArea: Everything
+quantity: 10
+prioritized: false
+centerFirst: false
+unique: false
+group: Stonetowerruins_sunk
+minDistanceFromSimilar: 50
+groupMax: ''
+maxDistanceFromSimilar: 0
+iconAlways: false
+iconPlaced: false
+randomRotation: true
+slopeRotation: false
+snapToWater: false
+interiorRadius: 0
+clearArea: false
+minTerrainDelta: 0
+maxTerrainDelta: 4
+minimumVegetation: 0
+maximumVegetation: 1
+surroundCheckVegetation: false
+surroundCheckDistance: 20
+surroundCheckLayers: 2
+inForest: false
+forestTresholdMin: 0
+forestTresholdMax: 2
+minDistanceFromCenter: 0
+maxDistanceFromCenter: 0
+minDistance: 0
+maxDistance: 0
+minAltitude: 
+maxAltitude: 

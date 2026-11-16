@@ -1,0 +1,37 @@
+name: Hildir_crypt
+enable: true
+prefabName: Hildir_crypt
+prefab: Hildir_crypt
+biome: BlackForest
+biomeArea: Median
+quantity: 3
+prioritized: true
+centerFirst: false
+unique: false
+group: ''
+minDistanceFromSimilar: 3000
+groupMax: ''
+maxDistanceFromSimilar: 0
+iconAlways: false
+iconPlaced: true
+randomRotation: true
+slopeRotation: false
+snapToWater: false
+interiorRadius: 21
+clearArea: false
+minTerrainDelta: 0
+maxTerrainDelta: 2
+minimumVegetation: 0
+maximumVegetation: 1
+surroundCheckVegetation: false
+surroundCheckDistance: 20
+surroundCheckLayers: 2
+inForest: false
+forestTresholdMin: 0
+forestTresholdMax: 1
+minDistanceFromCenter: 0
+maxDistanceFromCenter: 0
+minDistance: 3000
+maxDistance: 8000
+minAltitude: 
+maxAltitude: 

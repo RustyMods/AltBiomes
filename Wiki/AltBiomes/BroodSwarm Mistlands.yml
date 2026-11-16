@@ -1,0 +1,78 @@
+name: BroodSwarm Mistlands
+enabled: true
+biome: Mistlands
+namePrefix: ''
+nameSuffix: ''
+nameOverride: ''
+levelUpChanceMultiplier: 1
+forceMusic: ''
+forceEnvironment: ''
+addEnvironments: []
+blockEnvironments: []
+spawn:
+- name: SeekerBroodSwarm
+  enabled: true
+  devDisabled: false
+  prefab: SeekerBrood
+  biome: Mistlands
+  biomeArea: Median
+  maxSpawned: 100
+  spawnInterval: 3000
+  spawnChance: 40
+  spawnDistance: 10
+  spawnRadiusMin: 0
+  spawnRadiusMax: 0
+  requiredGlobalKey: ''
+  requiredEnvironments: []
+  requiredPersistentEvent: ''
+  groupSizeMin: 5
+  groupSizeMax: 10
+  groupRadius: 5
+  spawnAtNight: true
+  spawnAtDay: false
+  minAltitude: 1
+  maxAltitude: 1000
+  minTilt: 0
+  maxTilt: 35
+  inForest: true
+  outsideForest: true
+  inLava: false
+  outsideLava: true
+  canSpawnCloseToPlayer: false
+  insidePlayerBase: false
+  minOceanDepth: 0
+  maxOceanDepth: 0
+  huntPlayer: false
+  groundOffset: 0.5
+  groundOffsetRandom: 0
+  minDistanceFromCenter: 0
+  maxDistanceFromCenter: 0
+  maxLevel: 1
+  minLevel: 1
+  overrideLevelupChance: -1
+blockSpawnNames: []
+addVegetation: []
+addLocations: []
+blockLocationNames: []
+terrainTextureOverride: None
+baseHeightMultiplier: 1
+baseHeightOffset: 0
+heightMapMultiplier: 1
+heightMapOffset: 0
+heightMapBiomeOverride: None
+customGenerator: None
+minDistanceFromCenter: 2000
+minAmountSpawned: 1
+maxAmountSpawned: 3
+chance: 0.2
+requireNeighbor: None
+notNeighbor: None
+incompatibleAltBiomes: []
+minEdgeSize: 59
+maxEdgeSize: 199
+minAvgHeight: 30
+maxAvgHeight: 10000
+belowWorldX: 0
+aboveWorldX: 0
+belowWorldY: 0
+aboveWorldY: 0

@@ -1,0 +1,37 @@
+name: Mistlands_GuardTower1_ruined_new2
+enable: true
+prefabName: Mistlands_GuardTower1_ruined_new2
+prefab: Mistlands_GuardTower1_ruined_new2
+biome: Mistlands
+biomeArea: Median
+quantity: 20
+prioritized: false
+centerFirst: false
+unique: false
+group: Dvergr
+minDistanceFromSimilar: 128
+groupMax: ''
+maxDistanceFromSimilar: 0
+iconAlways: false
+iconPlaced: false
+randomRotation: false
+slopeRotation: true
+snapToWater: false
+interiorRadius: 0
+clearArea: true
+minTerrainDelta: 0
+maxTerrainDelta: 10
+minimumVegetation: 0
+maximumVegetation: 1
+surroundCheckVegetation: false
+surroundCheckDistance: 20
+surroundCheckLayers: 2
+inForest: false
+forestTresholdMin: 0
+forestTresholdMax: 0
+minDistanceFromCenter: 0
+maxDistanceFromCenter: 0
+minDistance: 0
+maxDistance: 0
+minAltitude: 
+maxAltitude: 

@@ -1,0 +1,37 @@
+name: GDKing
+enable: true
+prefabName: GDKing
+prefab: GDKing
+biome: BlackForest
+biomeArea: 6
+quantity: 4
+prioritized: true
+centerFirst: false
+unique: false
+group: ''
+minDistanceFromSimilar: 3000
+groupMax: ''
+maxDistanceFromSimilar: 0
+iconAlways: false
+iconPlaced: false
+randomRotation: true
+slopeRotation: false
+snapToWater: false
+interiorRadius: 0
+clearArea: true
+minTerrainDelta: 0
+maxTerrainDelta: 5
+minimumVegetation: 0
+maximumVegetation: 1
+surroundCheckVegetation: false
+surroundCheckDistance: 20
+surroundCheckLayers: 2
+inForest: false
+forestTresholdMin: 1
+forestTresholdMax: 5
+minDistanceFromCenter: 0
+maxDistanceFromCenter: 0
+minDistance: 1000
+maxDistance: 7000
+minAltitude: 
+maxAltitude: 

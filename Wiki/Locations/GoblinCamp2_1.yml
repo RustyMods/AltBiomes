@@ -1,0 +1,37 @@
+name: GoblinCamp2_1
+enable: true
+prefabName: GoblinCamp2_1
+prefab: GoblinCamp2_1
+biome: Plains
+biomeArea: 0
+quantity: 5
+prioritized: false
+centerFirst: false
+unique: false
+group: ''
+minDistanceFromSimilar: 0
+groupMax: ''
+maxDistanceFromSimilar: 0
+iconAlways: false
+iconPlaced: false
+randomRotation: false
+slopeRotation: false
+snapToWater: false
+interiorRadius: 0
+clearArea: true
+minTerrainDelta: 0
+maxTerrainDelta: 3
+minimumVegetation: 0
+maximumVegetation: 1
+surroundCheckVegetation: false
+surroundCheckDistance: 20
+surroundCheckLayers: 2
+inForest: false
+forestTresholdMin: 0
+forestTresholdMax: 1
+minDistanceFromCenter: 0
+maxDistanceFromCenter: 0
+minDistance: 0
+maxDistance: 0
+minAltitude: 
+maxAltitude: 

@@ -1,0 +1,37 @@
+name: Mistlands_Viaduct2
+enable: true
+prefabName: Mistlands_Viaduct2
+prefab: Mistlands_Viaduct2
+biome: Mistlands
+biomeArea: Median
+quantity: 150
+prioritized: false
+centerFirst: false
+unique: false
+group: Harbour
+minDistanceFromSimilar: 64
+groupMax: ''
+maxDistanceFromSimilar: 0
+iconAlways: false
+iconPlaced: false
+randomRotation: true
+slopeRotation: false
+snapToWater: false
+interiorRadius: 0
+clearArea: true
+minTerrainDelta: 4
+maxTerrainDelta: 40
+minimumVegetation: 0
+maximumVegetation: 1
+surroundCheckVegetation: false
+surroundCheckDistance: 20
+surroundCheckLayers: 2
+inForest: false
+forestTresholdMin: 0
+forestTresholdMax: 0
+minDistanceFromCenter: 0
+maxDistanceFromCenter: 0
+minDistance: 0
+maxDistance: 0
+minAltitude: 
+maxAltitude: 

@@ -1,0 +1,78 @@
+name: Troll Black Forest
+enabled: true
+biome: BlackForest
+namePrefix: ''
+nameSuffix: ''
+nameOverride: ''
+levelUpChanceMultiplier: 1
+forceMusic: ''
+forceEnvironment: ''
+addEnvironments: []
+blockEnvironments: []
+spawn:
+- name: Troll
+  enabled: true
+  devDisabled: false
+  prefab: Troll
+  biome: BlackForest
+  biomeArea: Everything
+  maxSpawned: 2
+  spawnInterval: 4000
+  spawnChance: 10
+  spawnDistance: 10
+  spawnRadiusMin: 0
+  spawnRadiusMax: 0
+  requiredGlobalKey: ''
+  requiredEnvironments: []
+  requiredPersistentEvent: ''
+  groupSizeMin: 1
+  groupSizeMax: 1
+  groupRadius: 3
+  spawnAtNight: true
+  spawnAtDay: true
+  minAltitude: 0
+  maxAltitude: 1000
+  minTilt: 0
+  maxTilt: 35
+  inForest: true
+  outsideForest: true
+  inLava: false
+  outsideLava: true
+  canSpawnCloseToPlayer: false
+  insidePlayerBase: false
+  minOceanDepth: 0
+  maxOceanDepth: 0
+  huntPlayer: false
+  groundOffset: 0.5
+  groundOffsetRandom: 0
+  minDistanceFromCenter: 0
+  maxDistanceFromCenter: 0
+  maxLevel: 3
+  minLevel: 1
+  overrideLevelupChance: -1
+blockSpawnNames: []
+addVegetation: []
+addLocations: []
+blockLocationNames: []
+terrainTextureOverride: None
+baseHeightMultiplier: 1
+baseHeightOffset: 0
+heightMapMultiplier: 1
+heightMapOffset: 0
+heightMapBiomeOverride: None
+customGenerator: None
+minDistanceFromCenter: 750
+minAmountSpawned: 1
+maxAmountSpawned: 3
+chance: 0.2
+requireNeighbor: None
+notNeighbor: None
+incompatibleAltBiomes: []
+minEdgeSize: 66
+maxEdgeSize: 199
+minAvgHeight: 30
+maxAvgHeight: 10000
+belowWorldX: 0
+aboveWorldX: 0
+belowWorldY: 0
+aboveWorldY: 0

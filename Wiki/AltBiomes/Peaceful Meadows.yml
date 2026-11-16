@@ -1,0 +1,210 @@
+name: Peaceful Meadows
+enabled: true
+biome: Meadows
+namePrefix: ''
+nameSuffix: ''
+nameOverride: ''
+levelUpChanceMultiplier: 1
+forceMusic: ''
+forceEnvironment: ''
+addEnvironments: []
+blockEnvironments: []
+spawn:
+- name: boar2
+  enabled: true
+  devDisabled: false
+  prefab: Boar
+  biome: Meadows
+  biomeArea: 7
+  maxSpawned: 15
+  spawnInterval: 150
+  spawnChance: 50
+  spawnDistance: 15
+  spawnRadiusMin: 0
+  spawnRadiusMax: 0
+  requiredGlobalKey: ''
+  requiredEnvironments: []
+  requiredPersistentEvent: ''
+  groupSizeMin: 4
+  groupSizeMax: 7
+  groupRadius: 10
+  spawnAtNight: true
+  spawnAtDay: true
+  minAltitude: 0
+  maxAltitude: 1000
+  minTilt: 0
+  maxTilt: 35
+  inForest: true
+  outsideForest: true
+  inLava: false
+  outsideLava: true
+  canSpawnCloseToPlayer: false
+  insidePlayerBase: false
+  minOceanDepth: 0
+  maxOceanDepth: 0
+  huntPlayer: false
+  groundOffset: 0.5
+  groundOffsetRandom: 0
+  minDistanceFromCenter: 0
+  maxDistanceFromCenter: 0
+  maxLevel: 3
+  minLevel: 1
+  overrideLevelupChance: -1
+- name: deer2
+  enabled: true
+  devDisabled: false
+  prefab: Deer
+  biome: Meadows
+  biomeArea: 7
+  maxSpawned: 10
+  spawnInterval: 100
+  spawnChance: 50
+  spawnDistance: 64
+  spawnRadiusMin: 0
+  spawnRadiusMax: 0
+  requiredGlobalKey: ''
+  requiredEnvironments: []
+  requiredPersistentEvent: ''
+  groupSizeMin: 2
+  groupSizeMax: 4
+  groupRadius: 5
+  spawnAtNight: true
+  spawnAtDay: true
+  minAltitude: 0
+  maxAltitude: 1000
+  minTilt: 0
+  maxTilt: 35
+  inForest: true
+  outsideForest: true
+  inLava: false
+  outsideLava: true
+  canSpawnCloseToPlayer: false
+  insidePlayerBase: false
+  minOceanDepth: 0
+  maxOceanDepth: 0
+  huntPlayer: false
+  groundOffset: 0.5
+  groundOffsetRandom: 0
+  minDistanceFromCenter: 0
+  maxDistanceFromCenter: 0
+  maxLevel: 3
+  minLevel: 1
+  overrideLevelupChance: -1
+- name: deerwhite
+  enabled: false
+  devDisabled: false
+  prefab: Deer_White
+  biome: Meadows
+  biomeArea: 7
+  maxSpawned: 1
+  spawnInterval: 300
+  spawnChance: 10
+  spawnDistance: 64
+  spawnRadiusMin: 0
+  spawnRadiusMax: 0
+  requiredGlobalKey: ''
+  requiredEnvironments: []
+  requiredPersistentEvent: ''
+  groupSizeMin: 1
+  groupSizeMax: 1
+  groupRadius: 5
+  spawnAtNight: false
+  spawnAtDay: true
+  minAltitude: 0
+  maxAltitude: 1000
+  minTilt: 0
+  maxTilt: 35
+  inForest: true
+  outsideForest: true
+  inLava: false
+  outsideLava: true
+  canSpawnCloseToPlayer: false
+  insidePlayerBase: false
+  minOceanDepth: 0
+  maxOceanDepth: 0
+  huntPlayer: false
+  groundOffset: 0.5
+  groundOffsetRandom: 0
+  minDistanceFromCenter: 0
+  maxDistanceFromCenter: 0
+  maxLevel: 3
+  minLevel: 2
+  overrideLevelupChance: -1
+blockSpawnNames:
+- Greyling
+- Greydwarf
+- Skeleton
+- Skeleton_Poison
+- Draugr
+- Draugr_Elite
+- Greydwarf_Shaman
+- Greydwarf_Elite
+- Neck
+- Troll
+- Bjorn
+addVegetation:
+- name: fireflies
+  prefab: FireFlies
+  enable: true
+  min: 20
+  max: 20
+  forcePlacement: false
+  scaleMin: 1
+  scaleMax: 1
+  randTilt: 0
+  chanceToUseGroundTilt: 0
+  biome: Meadows
+  biomeArea: 7
+  blockCheck: true
+  snapToStaticSolid: false
+  minAltitude: 0
+  maxAltitude: 1000
+  minVegetation: 0
+  maxVegetation: 0
+  surroundCheckVegetation: false
+  surroundCheckDistance: 20
+  surroundCheckLayers: 2
+  surroundBetterThanAverage: 0
+  minOceanDepth: 0
+  maxOceanDepth: 0
+  minTilt: 0
+  maxTilt: 25
+  terrainDeltaRadius: 0
+  maxTerrainDelta: 2
+  minTerrainDelta: 0
+  snapToWater: false
+  groundOffset: 1
+  groundSizeMin: 1
+  groupSizeMax: 1
+  groupRadius: 0
+  minDistanceFromCenter: 0
+  maxDistanceFromCenter: 0
+  inForest: false
+  forestThresholdMin: 0
+  forestThresholdMax: 1
+addLocations: []
+blockLocationNames: []
+terrainTextureOverride: None
+baseHeightMultiplier: 1
+baseHeightOffset: 0
+heightMapMultiplier: 1
+heightMapOffset: 0
+heightMapBiomeOverride: None
+customGenerator: None
+minDistanceFromCenter: 1000
+minAmountSpawned: 1
+maxAmountSpawned: 2
+chance: 0.2
+requireNeighbor: None
+notNeighbor: None
+incompatibleAltBiomes:
+- Bones
+- Dark Meadows
+minEdgeSize: 99
+maxEdgeSize: 299
+minAvgHeight: 30
+maxAvgHeight: 10000
+belowWorldX: 0
+aboveWorldX: 0
+belowWorldY: 0
+aboveWorldY: 0

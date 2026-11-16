@@ -1,0 +1,158 @@
+name: Dark Meadows
+enabled: true
+biome: Meadows
+namePrefix: ''
+nameSuffix: ''
+nameOverride: ''
+levelUpChanceMultiplier: 2
+forceMusic: ''
+forceEnvironment: ''
+addEnvironments: []
+blockEnvironments:
+- Clear
+- LightRain
+- DeepForest Mist
+spawn:
+- name: Draugr
+  enabled: true
+  devDisabled: false
+  prefab: Draugr
+  biome: Meadows
+  biomeArea: 7
+  maxSpawned: 2
+  spawnInterval: 120
+  spawnChance: 50
+  spawnDistance: 10
+  spawnRadiusMin: 0
+  spawnRadiusMax: 0
+  requiredGlobalKey: ''
+  requiredEnvironments: []
+  requiredPersistentEvent: ''
+  groupSizeMin: 1
+  groupSizeMax: 2
+  groupRadius: 3
+  spawnAtNight: true
+  spawnAtDay: true
+  minAltitude: -1.5
+  maxAltitude: 1000
+  minTilt: 0
+  maxTilt: 35
+  inForest: true
+  outsideForest: true
+  inLava: false
+  outsideLava: true
+  canSpawnCloseToPlayer: false
+  insidePlayerBase: false
+  minOceanDepth: 0
+  maxOceanDepth: 0
+  huntPlayer: false
+  groundOffset: 0.5
+  groundOffsetRandom: 0
+  minDistanceFromCenter: 0
+  maxDistanceFromCenter: 0
+  maxLevel: 3
+  minLevel: 1
+  overrideLevelupChance: -1
+- name: Draugr Elite
+  enabled: true
+  devDisabled: false
+  prefab: Draugr_Elite
+  biome: Swamp
+  biomeArea: Median
+  maxSpawned: 1
+  spawnInterval: 300
+  spawnChance: 5
+  spawnDistance: 15
+  spawnRadiusMin: 0
+  spawnRadiusMax: 0
+  requiredGlobalKey: ''
+  requiredEnvironments: []
+  requiredPersistentEvent: ''
+  groupSizeMin: 1
+  groupSizeMax: 1
+  groupRadius: 1
+  spawnAtNight: true
+  spawnAtDay: false
+  minAltitude: -1.5
+  maxAltitude: 1000
+  minTilt: 0
+  maxTilt: 35
+  inForest: true
+  outsideForest: true
+  inLava: false
+  outsideLava: true
+  canSpawnCloseToPlayer: false
+  insidePlayerBase: false
+  minOceanDepth: 0
+  maxOceanDepth: 0
+  huntPlayer: false
+  groundOffset: 0.5
+  groundOffsetRandom: 0
+  minDistanceFromCenter: 0
+  maxDistanceFromCenter: 0
+  maxLevel: 1
+  minLevel: 1
+  overrideLevelupChance: -1
+blockSpawnNames: []
+addVegetation: []
+addLocations:
+- name: WoodVillage2
+  enable: true
+  prefabName: WoodVillage2
+  biome: Meadows
+  biomeArea: 7
+  quantity: 15
+  prioritized: false
+  centerFirst: false
+  unique: false
+  group: woodvillage
+  minDistanceFromSimilar: 256
+  groupMax: ''
+  maxDistanceFromSimilar: 0
+  iconAlways: false
+  iconPlaced: false
+  randomRotation: true
+  slopeRotation: false
+  snapToWater: false
+  interiorRadius: 0
+  clearArea: true
+  minTerrainDelta: 0
+  maxTerrainDelta: 4
+  minimumVegetation: 0
+  maximumVegetation: 1
+  surroundCheckVegetation: false
+  surroundCheckDistance: 20
+  surroundCheckLayers: 2
+  inForest: false
+  forestThresholdMin: 0
+  forestThresholdMax: 1
+  minDistanceFromCenter: 0
+  maxDistanceFromCenter: 0
+  minDistance: 2000
+  maxDistance: 10000
+  minAltitude: 1
+  maxAltitude: 1000
+blockLocationNames:
+- WoodFarm1
+terrainTextureOverride: None
+baseHeightMultiplier: 0.8
+baseHeightOffset: 0
+heightMapMultiplier: 1
+heightMapOffset: 0
+heightMapBiomeOverride: None
+customGenerator: None
+minDistanceFromCenter: 1900
+minAmountSpawned: 2
+maxAmountSpawned: 5
+chance: 0.5
+requireNeighbor: None
+notNeighbor: None
+incompatibleAltBiomes: []
+minEdgeSize: 66
+maxEdgeSize: 299
+minAvgHeight: 30
+maxAvgHeight: 10000
+belowWorldX: 0
+aboveWorldX: 0
+belowWorldY: 0
+aboveWorldY: 0
