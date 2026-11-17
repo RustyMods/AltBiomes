@@ -1,0 +1,92 @@
+# Unique Identifier
+name: Lox Plains
+enabled: true
+# Allowed biomes, multiple separated by comma
+biome: Plains
+namePrefix: ''
+nameSuffix: ''
+nameOverride: ''
+levelUpChanceMultiplier: 1
+forceMusic: ''
+forceEnvironment: ''
+addEnvironments: []
+blockEnvironments: []
+spawn:
+- name: Lox
+  enabled: true
+  devDisabled: false
+  prefab: Lox
+  biome: Plains
+  biomeArea: 7
+  maxSpawned: 15
+  spawnInterval: 1000
+  spawnChance: 10
+  spawnDistance: 50
+  spawnRadiusMin: 0
+  spawnRadiusMax: 0
+  requiredGlobalKey: ''
+  requiredEnvironments: []
+  requiredPersistentEvent: ''
+  groupSizeMin: 3
+  groupSizeMax: 5
+  groupRadius: 15
+  spawnAtNight: true
+  spawnAtDay: true
+  minAltitude: 1
+  maxAltitude: 1000
+  minTilt: 0
+  maxTilt: 35
+  inForest: true
+  outsideForest: true
+  inLava: false
+  outsideLava: true
+  canSpawnCloseToPlayer: false
+  insidePlayerBase: false
+  minOceanDepth: 0
+  maxOceanDepth: 0
+  huntPlayer: false
+  groundOffset: 0.5
+  groundOffsetRandom: 0
+  minDistanceFromCenter: 0
+  maxDistanceFromCenter: 0
+  maxLevel: 1
+  minLevel: 1
+  overrideLevelupChance: -1
+blockSpawnNames:
+- Goblin
+# If empty, will use default Biome vegetation, else will override
+addVegetation: []
+# If empty, will use default biome locations, else will override
+addLocations: []
+# List of locations blocked from spawning in Alt Biome
+blockLocationNames:
+- GoblinCamp2
+- StoneTower1
+- StoneTower3
+# Override terrain color
+terrainTextureOverride: None
+# Override clutter grass
+clutterOverride: None
+baseHeightMultiplier: 1
+baseHeightOffset: 0
+heightMapMultiplier: 1
+heightMapOffset: 0
+heightMapBiomeOverride: None
+customGenerator: None
+minDistanceFromCenter: 2000
+minAmountSpawned: 0
+maxAmountSpawned: 1
+chance: 0.2
+requireNeighbor: None
+notNeighbor: None
+incompatibleAltBiomes:
+- Goblin Plains
+- Death Plains
+minEdgeSize: 99
+maxEdgeSize: 299
+minAvgHeight: 30
+maxAvgHeight: 10000
+belowWorldX: 0
+aboveWorldX: 0
+belowWorldY: 0
+aboveWorldY: 0

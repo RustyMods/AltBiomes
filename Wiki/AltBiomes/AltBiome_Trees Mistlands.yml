@@ -1,0 +1,163 @@
+# Unique Identifier
+name: Trees Mistlands
+enabled: true
+# Allowed biomes, multiple separated by comma
+biome: Mistlands
+namePrefix: ''
+nameSuffix: ''
+nameOverride: ''
+levelUpChanceMultiplier: 1
+forceMusic: ''
+forceEnvironment: ''
+addEnvironments: []
+blockEnvironments: []
+spawn: []
+blockSpawnNames: []
+# If empty, will use default Biome vegetation, else will override
+addVegetation:
+- name: YggaShoot4
+  prefab: YggaShoot1
+  enable: true
+  min: 20
+  max: 20
+  forcePlacement: false
+  scaleMin: 0.9
+  scaleMax: 1.2
+  randTilt: 5
+  chanceToUseGroundTilt: 0.1
+  biome: Mistlands
+  biomeArea: Everything
+  blockCheck: false
+  snapToStaticSolid: true
+  minAltitude: 1
+  maxAltitude: 1000
+  minVegetation: 0
+  maxVegetation: 0.2
+  surroundCheckVegetation: false
+  surroundCheckDistance: 20
+  surroundCheckLayers: 2
+  surroundBetterThanAverage: 0
+  minOceanDepth: 0
+  maxOceanDepth: 0
+  minTilt: 0
+  maxTilt: 80
+  terrainDeltaRadius: 3
+  maxTerrainDelta: 99
+  minTerrainDelta: 2
+  snapToWater: false
+  groundOffset: 0
+  groundSizeMin: 1
+  groupSizeMax: 1
+  groupRadius: 0
+  minDistanceFromCenter: 0
+  maxDistanceFromCenter: 0
+  inForest: false
+  forestThresholdMin: 0
+  forestThresholdMax: 0
+- name: YggaShoot_small2
+  prefab: YggaShoot_small1
+  enable: true
+  min: 100
+  max: 100
+  forcePlacement: false
+  scaleMin: 1
+  scaleMax: 2
+  randTilt: 5
+  chanceToUseGroundTilt: 0.1
+  biome: Mistlands
+  biomeArea: Everything
+  blockCheck: false
+  snapToStaticSolid: true
+  minAltitude: 1
+  maxAltitude: 1000
+  minVegetation: 0
+  maxVegetation: 2
+  surroundCheckVegetation: false
+  surroundCheckDistance: 20
+  surroundCheckLayers: 2
+  surroundBetterThanAverage: 0
+  minOceanDepth: 0
+  maxOceanDepth: 0
+  minTilt: 0
+  maxTilt: 45
+  terrainDeltaRadius: 3
+  maxTerrainDelta: 99
+  minTerrainDelta: 0
+  snapToWater: false
+  groundOffset: 0
+  groundSizeMin: 1
+  groupSizeMax: 2
+  groupRadius: 0
+  minDistanceFromCenter: 0
+  maxDistanceFromCenter: 0
+  inForest: false
+  forestThresholdMin: 0
+  forestThresholdMax: 0
+- name: ygga root2
+  prefab: YggdrasilRoot
+  enable: true
+  min: 1
+  max: 3
+  forcePlacement: false
+  scaleMin: 1
+  scaleMax: 1.5
+  randTilt: 0
+  chanceToUseGroundTilt: 0
+  biome: Mistlands
+  biomeArea: Everything
+  blockCheck: true
+  snapToStaticSolid: false
+  minAltitude: 1
+  maxAltitude: 1000
+  minVegetation: 0.2
+  maxVegetation: 1
+  surroundCheckVegetation: false
+  surroundCheckDistance: 20
+  surroundCheckLayers: 2
+  surroundBetterThanAverage: 0
+  minOceanDepth: 0
+  maxOceanDepth: 0
+  minTilt: 0
+  maxTilt: 45
+  terrainDeltaRadius: 5
+  maxTerrainDelta: 6
+  minTerrainDelta: 0
+  snapToWater: false
+  groundOffset: 0
+  groundSizeMin: 1
+  groupSizeMax: 1
+  groupRadius: 0
+  minDistanceFromCenter: 0
+  maxDistanceFromCenter: 0
+  inForest: false
+  forestThresholdMin: 0
+  forestThresholdMax: 0
+# If empty, will use default biome locations, else will override
+addLocations: []
+# List of locations blocked from spawning in Alt Biome
+blockLocationNames: []
+# Override terrain color
+terrainTextureOverride: None
+# Override clutter grass
+clutterOverride: None
+baseHeightMultiplier: 1
+baseHeightOffset: 0
+heightMapMultiplier: 1
+heightMapOffset: 0
+heightMapBiomeOverride: None
+customGenerator: None
+minDistanceFromCenter: 2000
+minAmountSpawned: 1
+maxAmountSpawned: 5
+chance: 0.2
+requireNeighbor: None
+notNeighbor: None
+incompatibleAltBiomes: []
+minEdgeSize: 59
+maxEdgeSize: 299
+minAvgHeight: 30
+maxAvgHeight: 10000
+belowWorldX: 0
+aboveWorldX: 0
+belowWorldY: 0
+aboveWorldY: 0

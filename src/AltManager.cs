@@ -111,7 +111,9 @@ public static class AltManager
         AltBiomes.Clear();
         var dirPath = Path.Combine(Paths.ConfigPath, AltBiomesPlugin.ModName);
         Directory.CreateDirectory(dirPath);
-        var paths = Directory.GetFiles(dirPath, "*.yml",  SearchOption.AllDirectories);
+        var folderPath = Path.Combine(dirPath, "Import");
+        Directory.CreateDirectory(folderPath);
+        var paths = Directory.GetFiles(folderPath, "*.yml",  SearchOption.AllDirectories);
         for (int i = 0; i < paths.Length; ++i)
         {
             var path = paths[i];

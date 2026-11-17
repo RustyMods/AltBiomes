@@ -22,7 +22,7 @@ public static partial class Commands
     public static void Init()
     {
         _ = new Command("export",
-            $"<color={HEX_Gray}>[name]</color>: Export Alt Biome YML file",
+            $"<color={HEX_Gray}>[name]</color>: Export YML file",
             Export,
             GetExportOptions,
             descriptions: GetExportDescriptions);
@@ -32,6 +32,12 @@ public static partial class Commands
             $"<color={HEX_Gray}>[name]</color>: Find Alt Biome by name", 
             FindAltBiome, 
             optionsFetcher: GetFindAltBiomeOptions,
+            adminOnly:true);
+
+        _ = new Command(
+            "reload",
+            "Reads files, clears registered alt biome locations & vegetation, and regenerate sectors data", 
+            Reload, 
             adminOnly:true);
     }
 }

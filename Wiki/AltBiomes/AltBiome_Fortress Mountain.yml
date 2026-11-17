@@ -1,0 +1,282 @@
+# Unique Identifier
+name: Fortress Mountain
+enabled: true
+# Allowed biomes, multiple separated by comma
+biome: Mountain
+namePrefix: ''
+nameSuffix: ''
+nameOverride: ''
+levelUpChanceMultiplier: 3
+forceMusic: ''
+forceEnvironment: ''
+addEnvironments: []
+blockEnvironments: []
+spawn:
+- name: Skeleton
+  enabled: true
+  devDisabled: false
+  prefab: Skeleton_Mountains
+  biome: Mountain
+  biomeArea: 7
+  maxSpawned: 10
+  spawnInterval: 300
+  spawnChance: 25
+  spawnDistance: 10
+  spawnRadiusMin: 0
+  spawnRadiusMax: 0
+  requiredGlobalKey: ''
+  requiredEnvironments: []
+  requiredPersistentEvent: ''
+  groupSizeMin: 3
+  groupSizeMax: 6
+  groupRadius: 5
+  spawnAtNight: true
+  spawnAtDay: true
+  minAltitude: 0
+  maxAltitude: 1000
+  minTilt: 0
+  maxTilt: 35
+  inForest: true
+  outsideForest: true
+  inLava: false
+  outsideLava: true
+  canSpawnCloseToPlayer: false
+  insidePlayerBase: false
+  minOceanDepth: 0
+  maxOceanDepth: 0
+  huntPlayer: false
+  groundOffset: 0.5
+  groundOffsetRandom: 0
+  minDistanceFromCenter: 0
+  maxDistanceFromCenter: 0
+  maxLevel: 1
+  minLevel: 1
+  overrideLevelupChance: -1
+- name: StoneGolem
+  enabled: true
+  devDisabled: false
+  prefab: StoneGolem
+  biome: Mountain
+  biomeArea: 6
+  maxSpawned: 1
+  spawnInterval: 120
+  spawnChance: 25.6
+  spawnDistance: 10
+  spawnRadiusMin: 0
+  spawnRadiusMax: 0
+  requiredGlobalKey: ''
+  requiredEnvironments: []
+  requiredPersistentEvent: ''
+  groupSizeMin: 1
+  groupSizeMax: 2
+  groupRadius: 4
+  spawnAtNight: true
+  spawnAtDay: true
+  minAltitude: 120
+  maxAltitude: 1000
+  minTilt: 0
+  maxTilt: 35
+  inForest: true
+  outsideForest: true
+  inLava: false
+  outsideLava: true
+  canSpawnCloseToPlayer: false
+  insidePlayerBase: false
+  minOceanDepth: 0
+  maxOceanDepth: 0
+  huntPlayer: false
+  groundOffset: 0.5
+  groundOffsetRandom: 0
+  minDistanceFromCenter: 0
+  maxDistanceFromCenter: 0
+  maxLevel: 1
+  minLevel: 1
+  overrideLevelupChance: -1
+blockSpawnNames: []
+# If empty, will use default Biome vegetation, else will override
+addVegetation:
+- name: stone_wall_ruin
+  prefab: stone_wall_ruin
+  enable: true
+  min: 2
+  max: 3
+  forcePlacement: false
+  scaleMin: 1
+  scaleMax: 1
+  randTilt: 0
+  chanceToUseGroundTilt: 0.45
+  biome: Mountain
+  biomeArea: 7
+  blockCheck: true
+  snapToStaticSolid: false
+  minAltitude: -3
+  maxAltitude: 1000
+  minVegetation: 0
+  maxVegetation: 0
+  surroundCheckVegetation: false
+  surroundCheckDistance: 20
+  surroundCheckLayers: 2
+  surroundBetterThanAverage: 0
+  minOceanDepth: 0
+  maxOceanDepth: 0
+  minTilt: 0
+  maxTilt: 22
+  terrainDeltaRadius: 0
+  maxTerrainDelta: 20
+  minTerrainDelta: 0
+  snapToWater: false
+  groundOffset: 0
+  groundSizeMin: 1
+  groupSizeMax: 2
+  groupRadius: 20
+  minDistanceFromCenter: 0
+  maxDistanceFromCenter: 0
+  inForest: false
+  forestThresholdMin: 0
+  forestThresholdMax: 1
+- name: stone_wall_ruin_2
+  prefab: stone_wall_ruin_2
+  enable: true
+  min: 1
+  max: 2
+  forcePlacement: false
+  scaleMin: 1
+  scaleMax: 1
+  randTilt: 0
+  chanceToUseGroundTilt: 0.45
+  biome: Mountain
+  biomeArea: 7
+  blockCheck: true
+  snapToStaticSolid: false
+  minAltitude: -3
+  maxAltitude: 1000
+  minVegetation: 0
+  maxVegetation: 0
+  surroundCheckVegetation: false
+  surroundCheckDistance: 20
+  surroundCheckLayers: 2
+  surroundBetterThanAverage: 0
+  minOceanDepth: 0
+  maxOceanDepth: 0
+  minTilt: 0
+  maxTilt: 22
+  terrainDeltaRadius: 0
+  maxTerrainDelta: 20
+  minTerrainDelta: 0
+  snapToWater: false
+  groundOffset: 0
+  groundSizeMin: 1
+  groupSizeMax: 2
+  groupRadius: 20
+  minDistanceFromCenter: 0
+  maxDistanceFromCenter: 0
+  inForest: false
+  forestThresholdMin: 0
+  forestThresholdMax: 1
+- name: rock3_mountain_2
+  prefab: rock3_mountain_1
+  enable: true
+  min: 3
+  max: 5
+  forcePlacement: false
+  scaleMin: 1
+  scaleMax: 1.5
+  randTilt: 0
+  chanceToUseGroundTilt: 1
+  biome: Mountain
+  biomeArea: 6
+  blockCheck: true
+  snapToStaticSolid: false
+  minAltitude: -1000
+  maxAltitude: 1000
+  minVegetation: 0
+  maxVegetation: 0
+  surroundCheckVegetation: false
+  surroundCheckDistance: 20
+  surroundCheckLayers: 2
+  surroundBetterThanAverage: 0
+  minOceanDepth: 0
+  maxOceanDepth: 0
+  minTilt: 0
+  maxTilt: 90
+  terrainDeltaRadius: 10
+  maxTerrainDelta: 100
+  minTerrainDelta: 0
+  snapToWater: false
+  groundOffset: -5
+  groundSizeMin: 1
+  groupSizeMax: 1
+  groupRadius: 0
+  minDistanceFromCenter: 0
+  maxDistanceFromCenter: 0
+  inForest: false
+  forestThresholdMin: 0
+  forestThresholdMax: 1
+# If empty, will use default biome locations, else will override
+addLocations:
+- name: StoneTowerRuins05_leet
+  enable: true
+  prefabName: StoneTowerRuins05_leet
+  biome: Mountain
+  biomeArea: Everything
+  quantity: 10
+  prioritized: false
+  centerFirst: false
+  unique: false
+  group: ''
+  minDistanceFromSimilar: 32
+  groupMax: ''
+  maxDistanceFromSimilar: 0
+  iconAlways: false
+  iconPlaced: false
+  randomRotation: true
+  slopeRotation: true
+  snapToWater: false
+  interiorRadius: 0
+  clearArea: true
+  minTerrainDelta: 0
+  maxTerrainDelta: 40
+  minimumVegetation: 0
+  maximumVegetation: 1
+  surroundCheckVegetation: false
+  surroundCheckDistance: 20
+  surroundCheckLayers: 2
+  inForest: false
+  forestThresholdMin: 0
+  forestThresholdMax: 1
+  minDistanceFromCenter: 0
+  maxDistanceFromCenter: 0
+  minDistance: 0
+  maxDistance: 0
+  minAltitude: 150
+  maxAltitude: 1000
+# List of locations blocked from spawning in Alt Biome
+blockLocationNames:
+- StoneTowerRuins05
+# Override terrain color
+terrainTextureOverride: None
+# Override clutter grass
+clutterOverride: None
+baseHeightMultiplier: 1
+baseHeightOffset: 0
+heightMapMultiplier: 1
+heightMapOffset: 0
+heightMapBiomeOverride: None
+customGenerator: None
+minDistanceFromCenter: 2000
+minAmountSpawned: 1
+maxAmountSpawned: 2
+chance: 0.2
+requireNeighbor: None
+notNeighbor: None
+incompatibleAltBiomes:
+- Wolf Mountain
+- Drake Mountain
+minEdgeSize: 199
+maxEdgeSize: 299
+minAvgHeight: 30
+maxAvgHeight: 10000
+belowWorldX: 0
+aboveWorldX: 0
+belowWorldY: 0
+aboveWorldY: 0

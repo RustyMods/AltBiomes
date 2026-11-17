@@ -1,0 +1,234 @@
+# Unique Identifier
+name: Goblin Plains
+enabled: true
+# Allowed biomes, multiple separated by comma
+biome: Plains
+namePrefix: ''
+nameSuffix: ''
+nameOverride: ''
+levelUpChanceMultiplier: 2
+forceMusic: ''
+forceEnvironment: ''
+addEnvironments: []
+blockEnvironments: []
+spawn:
+- name: Goblin
+  enabled: true
+  devDisabled: false
+  prefab: Goblin
+  biome: Plains
+  biomeArea: 7
+  maxSpawned: 5
+  spawnInterval: 60
+  spawnChance: 33
+  spawnDistance: 30
+  spawnRadiusMin: 0
+  spawnRadiusMax: 0
+  requiredGlobalKey: ''
+  requiredEnvironments: []
+  requiredPersistentEvent: ''
+  groupSizeMin: 5
+  groupSizeMax: 7
+  groupRadius: 5
+  spawnAtNight: true
+  spawnAtDay: true
+  minAltitude: 0
+  maxAltitude: 1000
+  minTilt: 0
+  maxTilt: 35
+  inForest: true
+  outsideForest: true
+  inLava: false
+  outsideLava: true
+  canSpawnCloseToPlayer: false
+  insidePlayerBase: false
+  minOceanDepth: 0
+  maxOceanDepth: 0
+  huntPlayer: false
+  groundOffset: 0.5
+  groundOffsetRandom: 0
+  minDistanceFromCenter: 0
+  maxDistanceFromCenter: 0
+  maxLevel: 3
+  minLevel: 1
+  overrideLevelupChance: -1
+blockSpawnNames:
+- Lox
+- Deathsquito
+# If empty, will use default Biome vegetation, else will override
+addVegetation: []
+# If empty, will use default biome locations, else will override
+addLocations:
+- name: GoblinCamp2_1
+  enable: true
+  prefabName: GoblinCamp2_1
+  biome: Plains
+  biomeArea: 0
+  quantity: 5
+  prioritized: false
+  centerFirst: false
+  unique: false
+  group: ''
+  minDistanceFromSimilar: 0
+  groupMax: ''
+  maxDistanceFromSimilar: 0
+  iconAlways: false
+  iconPlaced: false
+  randomRotation: false
+  slopeRotation: false
+  snapToWater: false
+  interiorRadius: 0
+  clearArea: true
+  minTerrainDelta: 0
+  maxTerrainDelta: 3
+  minimumVegetation: 0
+  maximumVegetation: 1
+  surroundCheckVegetation: false
+  surroundCheckDistance: 20
+  surroundCheckLayers: 2
+  inForest: false
+  forestThresholdMin: 0
+  forestThresholdMax: 1
+  minDistanceFromCenter: 0
+  maxDistanceFromCenter: 0
+  minDistance: 0
+  maxDistance: 0
+  minAltitude: 2
+  maxAltitude: 1000
+- name: GoblinHut01
+  enable: true
+  prefabName: GoblinHut01
+  biome: Plains
+  biomeArea: 7
+  quantity: 30
+  prioritized: false
+  centerFirst: false
+  unique: false
+  group: ''
+  minDistanceFromSimilar: 0
+  groupMax: ''
+  maxDistanceFromSimilar: 0
+  iconAlways: false
+  iconPlaced: false
+  randomRotation: true
+  slopeRotation: false
+  snapToWater: false
+  interiorRadius: 0
+  clearArea: false
+  minTerrainDelta: 0
+  maxTerrainDelta: 4
+  minimumVegetation: 0
+  maximumVegetation: 1
+  surroundCheckVegetation: false
+  surroundCheckDistance: 20
+  surroundCheckLayers: 2
+  inForest: false
+  forestThresholdMin: 0
+  forestThresholdMax: 1
+  minDistanceFromCenter: 0
+  maxDistanceFromCenter: 0
+  minDistance: 0
+  maxDistance: 0
+  minAltitude: 1
+  maxAltitude: 1000
+- name: GoblinHut02
+  enable: true
+  prefabName: GoblinHut02
+  biome: Plains
+  biomeArea: 7
+  quantity: 30
+  prioritized: false
+  centerFirst: false
+  unique: false
+  group: ''
+  minDistanceFromSimilar: 0
+  groupMax: ''
+  maxDistanceFromSimilar: 0
+  iconAlways: false
+  iconPlaced: false
+  randomRotation: true
+  slopeRotation: false
+  snapToWater: false
+  interiorRadius: 0
+  clearArea: false
+  minTerrainDelta: 0
+  maxTerrainDelta: 4
+  minimumVegetation: 0
+  maximumVegetation: 1
+  surroundCheckVegetation: false
+  surroundCheckDistance: 20
+  surroundCheckLayers: 2
+  inForest: false
+  forestThresholdMin: 0
+  forestThresholdMax: 1
+  minDistanceFromCenter: 0
+  maxDistanceFromCenter: 0
+  minDistance: 0
+  maxDistance: 0
+  minAltitude: 1
+  maxAltitude: 1000
+- name: GoblinHut03
+  enable: true
+  prefabName: GoblinHut03
+  biome: Plains
+  biomeArea: 7
+  quantity: 20
+  prioritized: false
+  centerFirst: false
+  unique: false
+  group: ''
+  minDistanceFromSimilar: 0
+  groupMax: ''
+  maxDistanceFromSimilar: 0
+  iconAlways: false
+  iconPlaced: false
+  randomRotation: true
+  slopeRotation: false
+  snapToWater: false
+  interiorRadius: 0
+  clearArea: false
+  minTerrainDelta: 0
+  maxTerrainDelta: 4
+  minimumVegetation: 0
+  maximumVegetation: 1
+  surroundCheckVegetation: false
+  surroundCheckDistance: 20
+  surroundCheckLayers: 2
+  inForest: false
+  forestThresholdMin: 0
+  forestThresholdMax: 1
+  minDistanceFromCenter: 0
+  maxDistanceFromCenter: 0
+  minDistance: 0
+  maxDistance: 0
+  minAltitude: 1
+  maxAltitude: 1000
+# List of locations blocked from spawning in Alt Biome
+blockLocationNames: []
+# Override terrain color
+terrainTextureOverride: None
+# Override clutter grass
+clutterOverride: None
+baseHeightMultiplier: 1
+baseHeightOffset: 0
+heightMapMultiplier: 1
+heightMapOffset: 0
+heightMapBiomeOverride: None
+customGenerator: None
+minDistanceFromCenter: 2000
+minAmountSpawned: 0
+maxAmountSpawned: 2
+chance: 0.2
+requireNeighbor: None
+notNeighbor: None
+incompatibleAltBiomes:
+- Lox Plains
+- Death Plains
+minEdgeSize: 66
+maxEdgeSize: 199
+minAvgHeight: 30
+maxAvgHeight: 10000
+belowWorldX: 0
+aboveWorldX: 0
+belowWorldY: 0
+aboveWorldY: 0

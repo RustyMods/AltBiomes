@@ -1,0 +1,86 @@
+# Unique Identifier
+name: Abomination Swamp
+enabled: true
+# Allowed biomes, multiple separated by comma
+biome: Swamp
+namePrefix: ''
+nameSuffix: ''
+nameOverride: ''
+levelUpChanceMultiplier: 1
+forceMusic: ''
+forceEnvironment: ''
+addEnvironments: []
+blockEnvironments: []
+spawn:
+- name: Abomination
+  enabled: true
+  devDisabled: false
+  prefab: Abomination
+  biome: Swamp
+  biomeArea: Median
+  maxSpawned: 3
+  spawnInterval: 2000
+  spawnChance: 20
+  spawnDistance: 30
+  spawnRadiusMin: 0
+  spawnRadiusMax: 0
+  requiredGlobalKey: ''
+  requiredEnvironments: []
+  requiredPersistentEvent: ''
+  groupSizeMin: 1
+  groupSizeMax: 1
+  groupRadius: 1
+  spawnAtNight: true
+  spawnAtDay: true
+  minAltitude: -2
+  maxAltitude: 5
+  minTilt: 0
+  maxTilt: 35
+  inForest: true
+  outsideForest: true
+  inLava: false
+  outsideLava: true
+  canSpawnCloseToPlayer: false
+  insidePlayerBase: false
+  minOceanDepth: 0
+  maxOceanDepth: 0
+  huntPlayer: false
+  groundOffset: 0
+  groundOffsetRandom: 0
+  minDistanceFromCenter: 0
+  maxDistanceFromCenter: 0
+  maxLevel: 0
+  minLevel: 1
+  overrideLevelupChance: -1
+blockSpawnNames: []
+# If empty, will use default Biome vegetation, else will override
+addVegetation: []
+# If empty, will use default biome locations, else will override
+addLocations: []
+# List of locations blocked from spawning in Alt Biome
+blockLocationNames: []
+# Override terrain color
+terrainTextureOverride: None
+# Override clutter grass
+clutterOverride: None
+baseHeightMultiplier: 1
+baseHeightOffset: 0
+heightMapMultiplier: 1
+heightMapOffset: 0
+heightMapBiomeOverride: None
+customGenerator: None
+minDistanceFromCenter: 2000
+minAmountSpawned: 1
+maxAmountSpawned: 3
+chance: 0.2
+requireNeighbor: None
+notNeighbor: None
+incompatibleAltBiomes: []
+minEdgeSize: 66
+maxEdgeSize: 145
+minAvgHeight: 30
+maxAvgHeight: 10000
+belowWorldX: 0
+aboveWorldX: 0
+belowWorldY: 0
+aboveWorldY: 0

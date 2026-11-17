@@ -8,8 +8,8 @@ public static class Clutter
     public static Heightmap.Biome FindClutterOverride(Vector3 point)
     {
         if (WorldGenerator.instance == null) return Heightmap.Biome.None;
-        var sector = WorldGenerator.instance.GetBiomeSector(point);
-        foreach (var altBiome in sector.AltBiomes)
+        BiomeSector? sector = WorldGenerator.instance.GetBiomeSector(point);
+        foreach (AltBiome? altBiome in sector.AltBiomes)
         {
             if (altBiome is not ExtendedAltBiome { m_clutterOverride: { } biomeClutter }) continue;
             if (biomeClutter == Heightmap.Biome.None) continue;

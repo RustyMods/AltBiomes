@@ -1,0 +1,86 @@
+# Unique Identifier
+name: Pinetree Black Forest
+enabled: true
+# Allowed biomes, multiple separated by comma
+biome: BlackForest
+namePrefix: ''
+nameSuffix: ''
+nameOverride: ''
+levelUpChanceMultiplier: 2
+forceMusic: ''
+forceEnvironment: ''
+addEnvironments: []
+blockEnvironments: []
+spawn: []
+blockSpawnNames: []
+# If empty, will use default Biome vegetation, else will override
+addVegetation:
+- name: Pinetree_01_blackforest
+  prefab: Pinetree_01
+  enable: true
+  min: 60
+  max: 60
+  forcePlacement: false
+  scaleMin: 1
+  scaleMax: 2.5
+  randTilt: 4
+  chanceToUseGroundTilt: 0.05
+  biome: BlackForest
+  biomeArea: 7
+  blockCheck: true
+  snapToStaticSolid: false
+  minAltitude: 0.1
+  maxAltitude: 1000
+  minVegetation: 0
+  maxVegetation: 0
+  surroundCheckVegetation: false
+  surroundCheckDistance: 20
+  surroundCheckLayers: 2
+  surroundBetterThanAverage: 0
+  minOceanDepth: 0
+  maxOceanDepth: 1.5
+  minTilt: 0
+  maxTilt: 30
+  terrainDeltaRadius: 0
+  maxTerrainDelta: 2
+  minTerrainDelta: 0
+  snapToWater: false
+  groundOffset: 0
+  groundSizeMin: 1
+  groupSizeMax: 1
+  groupRadius: 0
+  minDistanceFromCenter: 0
+  maxDistanceFromCenter: 0
+  inForest: false
+  forestThresholdMin: 0
+  forestThresholdMax: 1
+# If empty, will use default biome locations, else will override
+addLocations: []
+# List of locations blocked from spawning in Alt Biome
+blockLocationNames: []
+# Override terrain color
+terrainTextureOverride: None
+# Override clutter grass
+clutterOverride: None
+baseHeightMultiplier: 1
+baseHeightOffset: 0
+heightMapMultiplier: 1
+heightMapOffset: 0
+heightMapBiomeOverride: None
+customGenerator: None
+minDistanceFromCenter: 750
+minAmountSpawned: 1
+maxAmountSpawned: 5
+chance: 0.2
+requireNeighbor: None
+notNeighbor: None
+incompatibleAltBiomes:
+- Rock Black Forest
+minEdgeSize: 33
+maxEdgeSize: 199
+minAvgHeight: 30
+maxAvgHeight: 10000
+belowWorldX: 0
+aboveWorldX: 0
+belowWorldY: 0
+aboveWorldY: 0
