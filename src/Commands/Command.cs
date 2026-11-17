@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using UnityEngine;
 
-namespace MonsterDB;
+namespace AltBiomes;
 
 public class Command
 {

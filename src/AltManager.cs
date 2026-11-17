@@ -9,13 +9,15 @@ namespace AltBiomes;
 
 public static class AltManager
 {
-    private static readonly Dictionary<string, AltBiomeRef> AltBiomes = [];
+    public static readonly Dictionary<string, AltBiomeRef> AltBiomes = [];
 
     [HarmonyPatch(typeof(ZoneSystem), nameof(ZoneSystem.Awake))]
     private static class ZoneSystem_Awake_Patch
     {
         private static void Prefix()
         {
+            // since custom alt biomes are not within alt biome list game object, it won't be removed on destroyed
+            // so simply clear entire list anytime game restarts.
             AltBiomeList.m_altBiomes.Clear();
         }
     }
@@ -34,12 +36,26 @@ public static class AltManager
     {
         private static void Prefix(AltBiomeWorldData __instance)
         {
+            Load(false);
+        }
+    }
+
+    [HarmonyPatch(typeof(ZoneSystem), nameof(ZoneSystem.SetupLocations))]
+    private static class ZoneSystem_SetupLocations_Patch
+    {
+        private static void Prefix(ZoneSystem __instance)
+        {
+            // server needs to load earlier to register new locations & vegetation
             Load();
         }
     }
     
-    private static void Load()
+    public static void Load(bool log = true)
     {
+        if (Configs.RemoveOriginals)
+        {
+            AltBiomeList.m_altBiomes.Clear();
+        }
         StringBuilder sb = new StringBuilder();
         foreach (KeyValuePair<string, AltBiomeRef> kvp in AltBiomes)
         {
@@ -59,7 +75,7 @@ public static class AltManager
             }
 
             sb.Append($"Alt Biome: {kvp.Key}");
-            AltBiomesPlugin.LogDebug(sb.ToString());
+            if (log) AltBiomesPlugin.LogDebug(sb.ToString());
         }
     }
     
@@ -85,8 +101,8 @@ public static class AltManager
 
     public static string Serialize()
     {
-        var files = AltBiomes.Values.ToList();
-        var yml = Util.Serialize(files);
+        List<AltBiomeRef> files = AltBiomes.Values.ToList();
+        string? yml = Util.Serialize(files);
         return yml;
     }
     
@@ -110,8 +126,6 @@ public static class AltManager
                     continue;
                 }
                 AltBiomes[alt.m_name] = alt;
-                
-                AltBiomesPlugin.LogDebug($"Loaded {AltBiomes.Count} Alt Biome files");
             }
             catch
             {
@@ -119,9 +133,6 @@ public static class AltManager
             }
         }
 
-        if (AltBiomes.Count == 0)
-        {
-            AltBiomesPlugin.LogDebug("No Alt Biome files found");
-        }
+        AltBiomesPlugin.LogDebug($"Loaded {AltBiomes.Count} Alt Biome files");
     }
 }

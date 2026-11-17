@@ -53,9 +53,9 @@ public class AltBiomeRef
     public float? m_aboveWorldX;
     public float? m_belowWorldY;
     public float? m_aboveWorldY;
-    // public List<BiomeSector>? Sectors; // this gets added in alt biome generator when valid 
 
-    [YamlIgnore] private AltBiome? AltBiome;
+    [YamlIgnore] 
+    private AltBiome? AltBiome;
 
     public static implicit operator AltBiome(AltBiomeRef data)
     {
@@ -109,29 +109,29 @@ public class AltBiomeRef
 
         if (data.m_addEnvironments != null)
         {
-            result.m_addEnvironments = data.m_addEnvironments
-                .Select(e => (EnvEntry)e)
-                .ToList();
+            result.m_addEnvironments
+                .AddRange(data.m_addEnvironments
+                .Select(e => (EnvEntry)e));
         }
         if (data.m_spawn != null)
         {
-            result.m_spawn = data.m_spawn
-                .Select(s => (SpawnSystem.SpawnData)s)
-                .ToList();
+            result.m_spawn
+                .AddRange(data.m_spawn
+                .Select(s => (SpawnSystem.SpawnData)s));
         }
 
         if (data.m_addVegetation != null)
         {
-            result.m_addVegetation = data.m_addVegetation
-                .Select(v => (ZoneSystem.ZoneVegetation)v)
-                .ToList();
+            result.m_addVegetation
+                .AddRange(data.m_addVegetation
+                .Select(v => (ZoneSystem.ZoneVegetation)v));
         }
 
         if (data.m_addLocations != null)
         {
-            result.m_addLocations = data.m_addLocations
-                .Select(l => (ZoneSystem.ZoneLocation)l)
-                .ToList();
+            result.m_addLocations
+                .AddRange(data.m_addLocations
+                .Select(l => (ZoneSystem.ZoneLocation)l));
         }
 
         data.AltBiome = result;
@@ -160,7 +160,7 @@ public class AltBiomeRef
             m_addLocations = data.m_addLocations.Select(l => (ZoneLocationRef)l).ToList(),
             m_blockLocationNames = data.m_blockLocationNames,
             m_terrainTextureOverride = data.m_terrainTextureOverride,
-            m_clutterOverride = Heightmap.Biome.None,
+            m_clutterOverride = data is ExtendedAltBiome e ? e.m_clutterOverride : Heightmap.Biome.None,
             m_baseHeightMultiplier = data.m_baseHeightMultiplier,
             m_baseHeightOffset = data.m_baseHeightOffset,
             m_heightMapMultiplier = data.m_heightMapMultiplier,

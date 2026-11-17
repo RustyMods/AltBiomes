@@ -6,7 +6,9 @@ namespace AltBiomes;
 
 public static class VersionHandshake
 {
+#pragma warning disable CS0414 // Field is assigned but its value is never used
     private static bool load;
+#pragma warning restore CS0414 // Field is assigned but its value is never used
     public static readonly List<ZRpc> ValidatedPeers;
     internal static string ConnectionError = "";
 

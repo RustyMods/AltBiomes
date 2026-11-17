@@ -87,6 +87,9 @@
         <Reference Include="SoftReferenceableAssets">
             <HintPath>$(PublicizedAssembliesPath)\SoftReferenceableAssets_publicized.dll</HintPath>
         </Reference>
+        <Reference Include="Splatform">
+          <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim\valheim_Data\Managed\publicized_assemblies\Splatform_publicized.dll</HintPath>
+        </Reference>
         <Reference Include="System"/>
         <Reference Include="System.Core"/>
         <Reference Include="System.Data"/>
@@ -127,7 +130,6 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Managers\ConfigManager.cs"/>
-        <Compile Include="Managers\LocalizationManager.cs"/>
         <Compile Include="Managers\PrefabManager.cs"/>
         <Compile Include="Plugin.cs"/>
         <Compile Include="Properties\AssemblyInfo.cs"/>
@@ -136,7 +138,12 @@
         <Compile Include="src\Commands\Command.cs" />
         <Compile Include="src\Commands\CommandManager.cs" />
         <Compile Include="src\Commands\Commands.cs" />
+        <Compile Include="src\Commands\Export.cs" />
+        <Compile Include="src\Commands\Find.cs" />
+        <Compile Include="src\Commands\Reload.cs" />
+        <Compile Include="src\Configs.cs" />
         <Compile Include="src\ExtendedAltBiome.cs" />
+        <Compile Include="src\Extensions.cs" />
         <Compile Include="src\References\AltBiomeRef.cs" />
         <Compile Include="src\References\EnvEntryRef.cs" />
         <Compile Include="src\References\SpawnDataRef.cs" />

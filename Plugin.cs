@@ -1,7 +1,6 @@
 ﻿using System.Reflection;
 using BepInEx;
 using HarmonyLib;
-using MonsterDB;
 
 namespace AltBiomes;
 #nullable disable
@@ -23,6 +22,7 @@ public class AltBiomesPlugin : BaseUnityPlugin
         instance = this;
 
         Commands.Init();
+        Configs.Init();
         VersionHandshake.Init();
         
         var assembly = Assembly.GetExecutingAssembly();

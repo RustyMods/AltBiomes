@@ -87,7 +87,17 @@ public class ZoneVegetationRef
             m_forestTresholdMin = data.m_forestThresholdMin ?? 0f,
             m_forestTresholdMax = data.m_forestThresholdMax ?? 1f,
         };
-        if (!PrefabManager.TryGetPrefab(data.m_prefab, out GameObject prefab)) return result;
+        if (data.m_prefab == null || string.IsNullOrEmpty(data.m_prefab))
+        {
+            AltBiomesPlugin.LogWarning($"{result.m_name} prefab is null, skipping");
+            return result;
+        }
+        
+        if (!PrefabManager.TryGetPrefab(data.m_prefab, out GameObject prefab))
+        {
+            AltBiomesPlugin.LogWarning($"Failed to find {data.m_prefab} for {result.m_name} Zone Vegetation");
+            return result;
+        }
         result.m_prefab = prefab;
         result.m_enable = data.m_enable ?? true;
         return result;

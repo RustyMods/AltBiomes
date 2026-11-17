@@ -90,7 +90,7 @@ public static class ConfigManager
         watcher.EnableRaisingEvents = true;
     }
 
-    private static ConfigEntry<T> config<T>(string group, string name, T value, ConfigDescription description,
+    public static ConfigEntry<T> config<T>(string group, string name, T value, ConfigDescription description,
         bool synchronizedSetting = true)
     {
         ConfigDescription extendedDescription =
@@ -105,7 +105,7 @@ public static class ConfigManager
         return configEntry;
     }
 
-    private static ConfigEntry<T> config<T>(string group, string name, T value, string description,
+    public static ConfigEntry<T> config<T>(string group, string name, T value, string description,
         bool synchronizedSetting = true)
     {
         return config(group, name, value, new ConfigDescription(description), synchronizedSetting);
